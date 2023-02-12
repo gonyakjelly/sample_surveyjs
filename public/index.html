@@ -1,0 +1,23 @@
+<div id="surveyExternalNavigation">
+  External navigation:
+  <span id="surveyProgress"></span>
+  <span id="surveyPrev" onclick="window.navSurvey.prevPage();">Prev</span>
+  <span id="surveyNext" onclick="window.navSurvey.nextPage();">Next</span>
+  <span id="surveyComplete" onclick="window.navSurvey.completeLastPage();"
+    >Complete</span
+  >
+  <br />
+  Fitting Model number:
+  <select
+    class="pageSelector"
+    id="pageSelector"
+    onchange="window.navSurvey.currentPageNo = this.value"
+  ></select>
+  Garment number(upper):
+  <select
+    class="pageSelector"
+    id="GarmentSelector"
+    onchange="window.navSurvey.currentPageNo = this.value"
+  ></select>
+</div>
+<div id="surveyElement"></div>
